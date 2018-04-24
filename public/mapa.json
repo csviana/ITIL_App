@@ -1,0 +1,1219 @@
+{
+	"Titulo":"Aplicação de boas práticas ITIL para desenvolvimento Web by Cleirton Viana",
+	"Autor":"Cleirton Viana . cleirtonviana@gmail.com . https://csviana.ddns.net",
+	"Referência":"https://www.mindmeister.com/pt/435941334/o-mapa-do-itil?fullscreen=1",
+	"Base de dados": "Curso COMPLETO Para Certificação ITIL Foundation by Renê Chiari",
+	"Introdução": {
+		"Fatos": [
+			"Apesar do nome (Biblioteca da Infraestrutura de TI), traz melhores práticas para Gerenciamento de Serviços de TI (GSTI)",
+			"Criada no Reino Unido em 1989 pela CCTA (Central Computer and Telecommunications Agency), posteriormente OGC (Office of Government Commerce). Atualmente a AXELOS detém os direitos da marca",
+			"Teve duas grandes atualizações. A versão atual foi lançada em 2011",
+			"A norma ISO/IEC 20000 (Gestão de Serviços de TI) foi baseada na ITIL"
+		],
+		"Principais interessados":[
+			"Profissionais e Empresas, que têm desempenho superior utilizando as práticas descritas na biblioteca ITIL",
+			"Fóruns e Associações de Profissionais e Empresas",
+			"Provedores de Treinamento Acreditados",
+			"Institutos de Exame",
+			"Administrador do esquema de qualificação (Axelos)",
+			"Dono da ITIL (Axelos)",
+			"Editora (TSO)"
+		],
+		"Vantagens":[
+			"Conhecimento acumulado, praticado e discutido há mais de 20 anos",
+			"Termos, conceitos e processos se tornaram padrão de mercado",
+			"Esquema estruturado de certificação profissional",
+			"Auxilia a preparação para certificação empresarial (norma ISO/IEC20000-1)",
+			"Traz orientações sobre como gerar mais Valor - e menos Custo - com TI e Serviços",
+			"Incorpora e se integra a conceitos de outros modelos (CMMI®, Etom®, Six Sigma®, PMBOK®, PRINCE2™, SOA, COBIT®,etc.)",
+			"Conceitos de Serviço e Ciclo de Vida do Serviço removem barreiras tradicionais entre TI e Negócio, sistemas e infraestrutura, projetos e operação"
+		],
+		"Esquema de certificação profissional":{
+			"Foundation": [
+				"Pré-requisito para a maioria das vagas de emprego em TI",
+				"Crédito de 2 pontos no sistema de créditos"
+			],
+			"Intermediate":[
+				"Nível especializado",
+				"Diferencial de mercado",
+				"Crédito de 3 ou 4 pontos no sistema de créditos (para cada módulo)"
+			],
+			"Expert": "Exige um mínimo de 22 créditos e experiência prática com GSTI",
+			"Master": "Exige a comprovação prática em áreas de negócio"
+		},
+		"Melhores práticas de domínio público":[
+			"Melhores práticas: práticas que já foram usadas e testadas anteriormente por organizações similares",
+			"Melhores práticas de domínio público e Conhecimento proprietário"
+		],
+		"Por que a ITIL é bem-sucedida?":[
+			"É independente de fornecedor (Vendor-neutral)",
+			"NÃO É prescritiva",
+			"É uma melhor prática"
+		]
+	},
+	"Conceitos Básicos":{
+		"Serviços":{
+			"Serviço (conceito)": "Um meio de fornecer algo que um Cliente perceba como tendo certo valor, facilitando a obtenção de Resultados que os Clientes desejam, sem que eles tenham que arcar com a propriedade de determinados Custos e Riscos",
+			"Serviços Internos": "Serviços voltados ao CLIENTE INTERNO",
+			"Serviços Externos": "Serviços voltados ao CLIENTE EXTERNO",
+			"Tipos de Serviço":{
+				"Serviço Principal":"Entrega os resultados básicos desejados por um ou mais clientes",
+				"Serviço de Apoio":	"Necessário para entregar um serviço principal, podem ou não ser visíveis para o cliente, porém não são oferecidos isoladamente",
+				"Serviço Intensificador":"Adicionado a um serviço principal para torná-lo mais atraente ao cliente"
+			}
+		},
+		"Gerenciamento de Serviço": "conjunto especializado de habilidades organizacionais para fornecer valor a Clientes na forma de Serviços",
+		"Gerenciamento de Serviço de TI": "A implementação e o gerenciamento da qualidade dos serviços de TI de forma a atender às necessidades de negócio. Realizado pelos provedores de serviço de TI por meio da combinação adequada de pessoas, processo e tecnologia da informação",
+		"Partes Interessadas":{
+			"O que são Partes Interessadas?": "indivíduos, ou um grupo de indivíduos que influenciam ou podem ser influenciados por uma organização, um projeto, um serviço, etc.",
+			"Clientes":{
+				"Clientes Internos": "trabalham para o mesmo negócio que o provedor de serviços de TI.",
+				"Clientes Externos": "Pessoas que não são empregados por uma organização, ou organizações que são entidades legais separadas, que compram serviços do provedor de serviço nos termos de um acordo ou contrato de cobrança real"
+			},
+			"Usuários": "Consomem (usam) o serviço no dia a dia",
+			"Provedor de Serviço":[
+				"responsável pela entrega e pelo gerenciamento dos serviços de TI",
+				"Tipo I - provedor de serviço interno",
+				"Tipo II - unidade de serviços compartilhados",
+				"Tipo III - provedor de serviço externo"
+			],
+			"Fornecedor": "Terceiros. Responsáveis por fornecer produtos ou serviços necessários para entregar serviços de TI"
+		},
+		"Processos":{
+			"Características":[
+				"É mensurável",
+				"Entrega resultados específicos",
+				"Entrega seus resultados principais a um cliente ou parte interessada",
+				"Responde a um evento específico"
+			],
+			"Matriz RPCI (RACI)":[
+				"Método simples e eficaz de atribuir papéis e responsabilidades",
+				"R = Responsável (Executor)",
+				"P = Prestador de Conta (Responsabilizado)",
+				"C = Consultado",
+				"I = Informado"
+			],
+			"Papéis":{
+				"Dono de Processo": "É responsável (a autoridade) por garantir que seu processo seja executado conforme acordado e documentado e atinja os objetivos definidos",
+				"Gerente de Processo": "É responsável (a autoridade) pelo gerenciamento operacional de um processo dentro da organização independentemente de onde estão e quais são as tecnologias, os serviços e os profissionais envolvidos",
+				"Profissional de Processo (Praticante de processo)": "É responsável (a autoridade) por executar uma ou mais atividades do processo",
+				"Dono de Serviço": "Responde por um serviço específico dentro da organização, não importa onde estejam os componentes tecnológicos, os processos e os profissionais"
+			}
+		},
+		"Funções": "Unidades organizacionais especialistas em determinado trabalho. Dão estrutura para a organização. Possuem recursos e habilidades próprias, autocontidos.",
+		"Resultado": "O resultado obtido por meio da execução de uma atividade, seguimento de um processo, entrega de um serviço de TI, etc"
+	},
+	"Ciclo de vida do serviço":{
+		"Estratégia de Serviço":{
+			"Propósito": "Definir a perspectiva, posicionamento, planos e padrões do provedor de serviço para apoiar os resultados de negócio",
+			"Objetivos":[
+				"Criar valor para os Clientes através de serviços",
+				"Correlacionar os vários serviços, sistemas ou processos gerenciados",
+				"Desenvolver as habilidades e recursos necessários para gerar o valor",
+				"Transformar o gerenciamento de serviços em um ativo estratégico"
+			],
+			"Escopo":[
+				"Provedores internos e externos",
+				"Ecossistema de Negócios",
+				"Práticas de Gerenciamento de Serviços",
+				"Definição/Ajuste da Estratégia",
+				"Aspectos Econômicos do Serviço",
+				"Como Desenhar, desenvolver e implementar gerenciamento de serviços"
+			],
+			"Valor ao negócio":[
+				"Compreensão clara de quais tipos e níveis de serviço tornarão seus clientes bem-sucedidos",
+				"Repostas rápidas e efetivas a mudanças no ambiente de negócio",
+				"Retornos positivos sobre investimento em serviços, através de um portfólio de serviços quantificado",
+				"Comunicação funcional e transparente entre o cliente e o provedor de serviço",
+				"Melhor organização do provedor"
+			],
+			"Princípios e Modelos":{
+				"Utilidade e Garantia":[
+					"UTILIDADE: funcionalidade oferecida por um produto ou serviço para atender uma necessidade particular. O QUE o serviço faz.",
+					"GARANTIA: a garantia de que um produto ou serviço vai atender aos requisitos acordados. COMO o serviço faz",
+					"Uma vez que a definição de serviço indica que você precisa entregar valor aos clientes facilitando resultado que eles pretendem atingir, o foco na utilidade e garantia permite ajudar o cliente a atingir os seus resultados pretendidos."
+				],
+				"Ativos, Recursos e Habilidades":[
+					"O relacionamento de serviço entre provedores de serviço e seus clientes giram em torno do uso de ativos - tanto os ativos do provedor de serviço quando os ativos do cliente.",
+					"ATIVO DE CLIENTE: qualquer recurso ou habilidade usado por um cliente para atingir um resultado de negócio",
+					"ATIVO DE SERVIÇO: qualquer recurso ou habilidade usado pelo provedor de serviço para entregar serviços a um cliente",
+					"RECURSO: termo genérico que inclui a infraestrutura de TI, pessoas, orçamento e qualquer outra coisa que possa ajudar a entregar um serviço de TI. São insumos pra produção de valor.",
+					"HABILIDADES: competência de uma Organização em coordenar, controlar e distribuir recursos para produzir valor"
+				],
+				"Governança": "Garantir que Políticas e Estratégia sejam realmente implantadas e que os Processos requeridos estão sendo corretamente seguidos",
+				"Criação de Valor": "Pra conseguir entregar o valor que o cliente espera, é preciso selecionar os ativos certos e coordená-los na maneira certa a fim de criar serviços de TI que atendam as necessidades dos clientes."
+			}
+		},
+		"Desenho de Serviço":{
+			"Propósito":"Desenhar um novo serviço ou modificar um já existente visando sua entrada no ambiente produtivo",
+			"Objetivos": "Garantir uma abordagem holística em todos os aspectos do Desenho de Serviço: Funcional, Gerencial, Operacional",
+			"Escopo":[
+				"Converter objetivos estratégicos em Portfólios e ativos de serviço",
+				"Direcionamento para o desenho e desenvolvimento de: Serviços e Modelos de Serviço, Modelos de '‘sourcing’', Processos e métodos de gerenciamento de serviços"
+			],
+			"Valor ao negócio":[
+				"Solução de Serviços desenhados para atender às necessidades documentadas do negócio",
+				"Redução do TCO (Custo Total de Propriedade)‏",
+				"Melhoria na qualidade e consistência do serviço",
+				"Maior facilidade na implementação do serviço novo ou modificado"
+			],
+			"Princípios e Modelos":{
+				"Pacote de Desenho de Serviço (PDS)": "conjunto de documentos que definem todos os aspectos de um serviço e seus requisitos através de cada fase do ciclo de vida.",
+				"4 Ps":[
+					"PESSOAS: garantir as pessoas certas com a competência e habilidades certas",
+					"PROCESSOS: garantir que processos de gerenciamento de serviços sejam desenhados apropriadamente",
+					"PRODUTOS/Tecnologia: Os próprios serviços de TI, com as ferramentas e tecnologias que os suportam",
+					"PARCEIROS: bons parceiros (fornecedores) para auxiliar a entrega e suporte dos serviços de TI"
+				],
+				"Os cinco aspectos do Desenho de Serviço":{
+					"I Desenho do serviço": "Identificar e acordar todos os requisitos. Estimar os recursos e habilidades necessários para desenvolver e operar o serviço.",
+					"II Desenho de ferramentas e do Sistema de Gerenciamento de Serviços": "Revisar os sistemas e ferramentas de Gerenciamento de Serviços para garantir que sejam capazes de suportar o serviço novo ou modificado. Avaliar consistência com os demais serviços do portfólio",
+					"III Desenho da Arquitetura Tecnológica e dos Sistemas de Gerenciamento": "Garantir que as arquiteturas tecnológicas e os sistemas de gerenciamento dessas arquiteturas estejam consistentes com o serviço novo ou modificado",
+					"IV Processos": "Garantir que os processos sejam adequados para operar, suportar e manter o serviço novo ou modificado",
+					"V Desenho das Métricas e dos Métodos de Mensuração": "Garantir que os métodos de mensuração sejam capazes de prover as métricas do serviço novo ou modificado"
+				}
+			}
+		},
+		"Transição de Serviço":{
+			"Propósito": "Garantir que os serviços novos, modificados e retirados atendam as expectativas do negócio conforme documentado nos estágios de estratégia e desenho de serviço",
+			"Objetivos":[
+				"Planejar e gerenciar mudanças nos serviços de forma eficaz e eficiente",
+				"Gerenciar riscos de serviços novo, modificados ou retirados (descontinuados)",
+				"Implementar liberações de serviço bem-sucedidas",
+				"Garantir que as mudanças nos serviços criem o valor de negócio esperado",
+				"Fornecer conhecimento e informação de boa qualidade sobre os serviços e ativos de serviço"
+			],
+			"Escopo":{
+				"c1":"Introdução de novos serviços",
+				"c2":"Modificação de serviços existentes",
+				"c3":"Retirada/descontinuação de serviços",
+				"Transferência de serviços":[
+					"Terceirização (Outsourcing)",
+					"Internalização (Insourcing)",
+					"Transferência de um fornecedor para outro"
+				]
+			},
+			"Valor ao negócio":[
+				"Habilita o tratamento de um alto volume de mudanças e liberações",
+				"Permite a adequação de um novo serviço (ou modificado) refletindo as necessidades de negócio e da operação do cliente",
+				"Garante utilização do novo serviço (ou modificado) de forma que maximize o valor para a operação do negócio"
+			]
+		},
+		"Operação de Serviço":{
+			"Propósito":[
+				"Coordenar e executar as atividades e processos necessários para entregar e gerenciar serviços nos níveis acordados para usuários e clientes",
+				"Gerenciar a tecnologia usada para a entrega e suporte aos serviços"
+			],
+			"Objetivos":[
+				"Manter a satisfação do negócio e a credibilidade da TI",
+				"Conduzir, controlar e gerenciar as operações do dia a dia",
+				"Garantir que o acesso para serviços de TI acordados é fornecido somente para quem está autorizado a utilizá-los"
+			],
+			"Escopo":{
+				"Execução de todas as atividades contínuas necessárias para entrega e suporte dos serviços":[
+					"O Serviço propriamente dito fornecido por um provedor externo ao usuário ou ao próprio cliente",
+					"Os processos de gerenciamento de serviços",
+					"Gerenciamento da infraestrutura usada para a entrega do serviço",
+					"Pessoas que gerenciam a tecnologia, processos e serviços"
+				]
+			},
+			"Valor ao negócio": "É na Operação de Serviço que o valor é percebido",
+			"Conceitos Básicos":{
+				"Comunicação na operação de serviço":{
+					"c1":"Previne e diminui problemas operacionais decorrentes de comunicação falha, ou a falta de comunicação",
+					"c2":"Toda comunicação deve ter um propósito: ou uma ação resultante.",
+					"Tipos de comunicação podem variar":[
+						"Comunicação de rotinas operacionais",
+						"Comunicação entre turnos",
+						"Relatórios de desempenho",
+						"Comunicação em projetos",
+						"Comunicação relacionada a mudanças, exceções e emergências",
+						"Treinamento"
+					]
+				}
+			}
+		},
+		"Melhoria de Serviço Continuada":{
+			"Propósito": "Alinhar continuamente os serviços de TI de acordo com as necessidades do cliente, identificando e implementando melhorias aos serviços de TI que suportam os processos de negócio.",
+			"Objetivos":[
+				"Rever, analisar e fazer recomendações sobre oportunidades de melhoria em cada fase do ciclo de vida",
+				"Rever e analisar os resultados dos níveis de serviço atingidos",
+				"Identificar e implementar atividades para melhorar qualidade dos serviços e eficácia e eficiência dos processos de gerenciamento de serviços",
+				"Melhorar custo e eficácia da entrega de serviços de TI",
+				"Identificar e implementar melhorias nos processos de gerenciamento de serviços e suas ferramentas de suporte",
+				"Garantir utilização de métodos aplicáveis de gerenciamento da qualidade"
+			],
+			"Escopo":[
+				"A saúde da disciplina GSTI como um todo",
+				"Contínuo alinhamento do Portfólio de Serviços com os requisitos de negócio atuais e futuros",
+				"Amadurecimento dos processos de TI que suportam cada serviço dentro do modelo ciclo de vida",
+				"A melhoria contínua de todos os aspectos do serviço de TI e ativos que os suportam"
+			],
+			"Valor ao negócio":[
+				"Melhoria",
+				"Benefícios (tangíveis / intangíveis)",
+				"Retorno sobre Investimento (ROI)",
+				"Valor do Investimento (VOI)‏"
+			],
+			"Conceitos Básicos":{
+				"Registro da Melhoria Continuada de Serviço (MSC)": "registro de todas as suas oportunidades de melhoria",
+				"Ciclo de Deming (PDCA)":{
+					"c1":"abordagem popular para melhoria contínua / qualidade",
+					"Estrutura divida em quatro fases":{
+						"(P) Plan/Planejar": "Identificar o que se quer melhorar e como",
+						"(D) Do/Fazer": "Atribuir os recursos e executar a melhoria proposta",
+						"(C) Check/Verificar": "Fazer medições e verificar se o objetivo proposto foi atingido",
+						"(A) Act/Agir": "Revisar o que foi feito e identificar necessidade de melhorias adicionais"
+					}
+				},
+				"Abordagem de Melhoria Contínua":{
+					"Modelo detalhado para planejar e executar melhorias":{
+						"Qual é a visão?": "Conhecer o que se pretende fazer e como se encaixa nos objetivos do negócio ou da organização de TI",
+						"Onde estamos agora?": "Avaliar a situação atual e criar um baseline",
+						"Onde nos queremos estar?": "Definir as metas que se espera atingir com a melhoria",
+						"Como chegaremos lá?": "Realizar as ações necessárias para eliminar o GAP",
+						"Já Chegamos?": "Medir as melhorias para validar se os resultados propostos foram atingidos",
+						"Como mantemos o momento?": "Não dar um passo para trás. Não perder o que já foi conquistado"
+					}
+				},
+				"O papel da medição":{
+					"Relacionamento entre os fatores críticos de sucesso (FCS) e os principais indicadores de desempenho (PID)":[
+						"Fator crítico de sucesso (FCS): algo que precisa acontecer para ser considerado bem-sucedido",
+						"Principal Indicador de Desempenho (PID ou KPI): medida chave que indica o seu desempenho com relação a um fator crítico de sucesso."
+					],
+					"Métricas":{
+						"c1":"Uma escala de medição. Uma coleção de medições relacionadas",
+						"Tipos de Métricas":{
+							"Tecnologia": "medições de componentes individuais de TI",
+							"Processo":[
+								"Refletem o desempenho do gerenciamento de serviço",
+								"Normalmente são fatores criticos de sucesso e indicadores de performance relevantes pra cada processo de gerenciamento."
+							],
+							"Serviço":[
+								"Medem a visão de um serviço fim a fim",
+								"Melhor representa a visão de um usuário"
+							]
+						}
+					},
+					"Medição": "se refere a uma medição individual",
+					"Linhas de Base (Baseline)": "Uma medição feita em um determinado momento, usada como ponto de referência."
+				}
+			}
+		}
+	},
+	"Processos de Gerenciamento de Serviços":{
+		"Processos de Estratégia de Serviço":{
+			"Gerenciamento de Portfólio de Serviço":{
+				"Propósito": "Garantir que o provedor de serviço tenha o mix correto de serviços para balancear o investimento na TI com a habilidade de atender aos resultados de negócio.",
+				"Objetivos": "Gerenciar o Portfólio de Serviços durante todo o ciclo de vida, focando no valor que os serviços entregam ao negócio.",
+				"Escopo":{
+					"Funil de Serviço (Pipeline)": "Propostos ou em desenvolvimento",
+					"Catálogo de Serviço": "Em operação ou disponíveis para Usuários",
+					"Serviços Obsoletos": "Descontinuados"
+				},
+				"Conceitos Básicos":{
+					"Portfólio de Serviço": "conjunto completo de serviços que são gerenciados por um provedor de serviço"
+				}
+			},
+			"Gerenciamento Financeiro para Serviços de TI":{
+				"Propósito": "garantir o nível apropriado de orçamento pra desenhar, desenvolver e entregar serviços conforme previstos na estratégia da organização",
+				"Objetivos":[
+					"Quantificar, em termos financeiros, o valor dos serviços de TI e dos ativos que sustentam tais serviços",
+					"Qualificar a previsão operacional",
+					"Ajudar a identificar, acordar e documentar o valor dos serviços",
+					"Possibilitar a modelagem e o gerenciamento da demanda dos serviços"
+				],
+				"Escopo":{
+					"Orçamento": "Prever e controlar os gastos em serviços de TI",
+					"Contabilização": "Habilita a contabilização completa de como o dinheiro é gasto",
+					"Cobrança": "Requerido para cobrar os clientes pelos serviços fornecidos a eles"
+				},
+				"Conceitos Básicos":{
+					"Caso de Negócio (Business Case)":[
+						"Ferramenta para apoio a decisão",
+						"Projeta consequências de ações de negócio",
+						"Dimensões qualitativa e quantitativa",
+						"Impacto no negócio (Análise de resultados financeiros e não financeiros)",
+						"Risco e Contingências (Resultados imprevistos)"
+					],
+					"Modelo de custo":{
+						"c1":"framework que permite ao provedor de serviço determinar os custos da entrega de serviços e garantir que esses custos também sejam alocados corretamente",
+						"Formas de alocação de custos":[
+							"por departamento",
+							"por cliente",
+							"por localização",
+							"por serviço"
+						],
+						"Categorias de custo":{
+							"Diretos": "atribuídos exclusivamente pra um serviço ou pra um cliente",
+							"Indiretos": "custos compartilhados, não atribuídos para somente um serviço ou cliente",
+							"CAPEX":[
+								"Custos capitais",
+								"Grandes investimentos, aquisições",
+								"Deve considerar depreciação"
+							],
+							"OPEX":[
+								"Custos operacionais",
+								"Recorrentes",
+								"Relacionados a execução dos serviços no dia a dia"
+							]
+						},
+						"Elementos de custo":{
+							"PASHET":[
+								"Pessoas",
+								"Acomodações",
+								"Software",
+								"Hardware",
+								"Externo",
+								"Treinamento"
+							]
+						}
+					}
+				}
+			},
+			"Gerenciamento de Demanda":{
+				"Propósito": "Compreender, antecipar e influenciar a demanda por serviços e trabalhar com o gerenciamento da capacidade para garantir que o provedor de serviço tenha capacidade para atender esta demanda",
+				"Objetivos":[
+					"Identificar e analisar padrões de atividade de negócio para compreender níveis de demanda que serão exigidos",
+					"Definir e analisar perfis de usuários para compreender os perfis de demanda de diferentes tipos de usuários",
+					"Trabalhar com o gerenciamento da capacidade para garantir que recursos apropriados sejam disponibilizados em níveis adequados de capacidade para cumprir a demanda, mantendo o balanceamento entre o custo e o valor do serviço",
+					"Antecipar e prevenir ou gerenciar situações onde a demanda exceda a capacidade de entrega",
+					"Direcionar a utilização de recursos para atender as variações de demanda"
+				],
+				"Escopo":[
+					"Padrão de atividade de negócio (PAN)",
+					"Perfil de Usuário"
+				],
+				"Conceitos Básicos":{
+					"Padrão de atividade de negócio (PAN)":[
+						" Padrão de demanda (carga de trabalho) característico de uma ou mais atividades de negócio",
+						"Ajudam o provedor a entender os diferentes padrões e se planejar melhor para atendê-los"
+					],
+					"Perfil de Usuário":{
+						"c1":"Padrão de demanda característico de um tipo de usuário",
+						"Aplica-se tanto a pessoas quanto a processos e aplicações":[
+							"Para pessoas, é baseado em papéis e responsabilidades",
+							"Para processos e aplicações, é baseado em funções e operações"
+						]
+					}
+				}
+			},
+			"Gerenciamento de Relacionamento de Negócio":{
+				"Propósito": "Estabelecer e manter um relacionamento positivo com os clientes, baseado na identificação das necessidades dos clientes existentes e potenciais e garantindo que os serviços apropriados sejam desenvolvidos para atender a essas necessidades",
+				"Objetivos":[
+					"Garantir que o provedor compreenda a perspectiva do cliente, e priorize os serviços e ativos de serviço apropriadamente",
+					"Garantir altos níveis de satisfação do cliente",
+					"Estabelecer e manter um relacionamento construtivo entre o provedor e o cliente",
+					"Identificar mudanças no ambiente do cliente ou tendências tecnológicas que possam impactar o tipo, nível ou utilização dos serviços",
+					"Estabelecer e articular requisitos de negócio para serviços novos ou modificados",
+					"Garantir que o provedor atenda as necessidades de negócio do cliente",
+					"Mediar os casos de requisitos conflitantes entre diferentes unidades de negócio",
+					"Estabelecer processos formais de reclamação e escalonamento para o cliente"
+				],
+				"Escopo":{
+					"Provedor de Serviço Interno":[
+						"representantes seniores da TI",
+						"gerentes seniores de unidades de negócio"
+					],
+					"Provedor de Serviço Externo":[
+						"funções dedicadas de GRNs",
+						"gerentes de conta"
+					]
+				},
+				"Conceitos Básicos": "Diferenças entre Gerenciamento de Relacionamento de Negócio e Gerenciamento de Nível de Serviço"
+			}
+		},
+		"Processos de Desenho de Serviço":{
+			"Gerenciamento do Nível de Serviço":{
+				"Propósito": "assegurar que todos os serviços atuais e planejados sejam entregues com metas mensuráveis e acordadas",
+				"Objetivos":[
+					"Definir, acordar e documentar níveis de serviço",
+					"Monitorar, reportar, analisar criticamente e revisar níveis de serviço",
+					"Melhorar níveis de serviço"
+				],
+				"Escopo":{
+					"Serviços em Produção": "Envolve a definição de um ANS (Acordo de Nível de Serviço)",
+					"Serviços Planejados (Novos ou Modificados)": "Envolve a definição de um RNS (Requisito de Nível de Serviço)"
+				},
+				"Conceitos Básicos":{
+					"Requisito de Nível de Serviço (RNS)":[
+						"requisitos do cliente documentados antes do SLA ser acordado",
+						"ponto de partida pra negociação do SLA",
+						"também precisam ser acordados e documentados com o Cliente"
+					],
+					"Acordo de Nível de Serviço (ANS ou SLA)":{
+						"c1":"Acordo documentado entre o Cliente de Serviços de TI e o Provedor de Serviços de TI",
+						"c2":"Define metas qualitativas e quantitativas do serviço",
+						"c3":"Define responsabilidades para ambas as partes",
+						"c4":"Deve ser estruturado para cobrir todos os clientes e serviços que consomem",
+						"c5":"Usa o catálogo de serviço como base",
+						"Pode ser baseado por serviço, cliente ou multinível":{
+							"Baseado em serviço": "cobre um único serviço, para todos os clientes daquele serviço",
+							"Baseado em cliente": "cobre um único cliente, para todos os serviços daquele cliente",
+							"Multinível":[
+								"Nível 1 - Corporativo",
+								"Nível 2 - Cliente",
+								"Nível 3 - Serviço"
+							]
+						}
+					},
+					"Acordo de Nível Operacional (ANO)": "acordo entre o provedor de serviços de TI e outra parte da mesma organização",
+					"Contrato de Apoio (CA)": "contrato entre um provedor de serviços de TI e um fornecedor externo",
+					"Gráfico MANS (Monitoração do ANS)":[
+						"relatórios de exceção",
+						"Exibe dentro de um período, quais foram as metas cumpridas, quais estiveram prestes a serem descumpridas e quais não foram atingidas"
+					],
+					"Plano de Melhoria de Serviço (PMS)": "plano formal para implementar melhorias em um processo ou um serviço de TI"
+				},
+				"atividades":[
+					"Determinação, negociação, documentação e acordo dos Requisitos de Nível de Serviço e produção dos SLAs",
+					"Análise e revisão dos acordos existentes e contratos",
+					"Monitoração do desempenho do serviço em relação ao SLA e a produção de relatórios de serviço",
+					"Conduzir a revisão do serviço e instigar ações no Plano de Melhoria de Serviços",
+					"Medir e melhorar a satisfação dos clientes",
+					"Desenvolver contatos e relacionamentos, registrar e gerenciar elogios e reclamações"
+				],
+				"interfaces":{
+					"Gerenciamento de Incidente": "Ger. de Nível de serviço provê informações sobre SLAs para atendimento de incidentes ou disponibilidade acordada",
+					"Gerenciamento de Problema": "Ger. de Nível de Serviço provê informações sobre os SLAs e Planos de Melhoria de Serviço para que o Ger. de Problema possa priorizar a investigação",
+					"Gerenciamento de Mudança":[
+						"Ger. de Mudança garante que as RDMs atendam os SLAs",
+						"Ger. de Nível de Serviço monitora e revê acordos de mudanças no SLA via Ger. de Mudança"
+					],
+					"Gerenciamento da Capacidade":[
+						"Ger. de Nível de Serviço informa requisitos de capacidade acordados em SLAs",
+						"Ger. da Capacidade gera análise de informações sobre capacidade para propor novos serviços ou melhorias em serviços existentes"
+					],
+					"Gerenciamento da Disponibilidade":[
+						"Ger. de Nível de Serviço informa requisitos de disponibilidade acordados em SLAs",
+						"Ger. da Disponibilidade informa disponibilidade atual ou dados para novos acordos de SLAs."
+					],
+					"Gerenciamento da Continuidade de Serviços de TI": "Ger. de Nível de Serviço informa requisitos de continuidade acordados em SLAs",
+					"Gerenciamento da Segurança da Informação": "Ger. de Nível de Serviço informa requisitos de segurança acordados em SLAs",
+					"Gerenciamento de Relacionamento de Negócio":[
+						"Ger. de Relacionamento de Negócio preocupa-se em entender as necessidades do Cliente e garantir que o provedor de serviços esteja preparado para atendê-las",
+						"Ger. de Nível de Serviço garante que os níveis de serviço acordados com o cliente e usuários sejam fornecidos e atingidos"
+					]
+				}
+			},
+			"Gerenciamento de Catálogo de Serviço":{
+				"Propósito": "Fornecer e manter uma fonte única de informações consistentes sobre todos os serviços em produção e aqueles que estão sendo preparados pra entrar em produção, e garantir que estejam amplamente disponíveis para aqueles que estão autorizados a usá-los",
+				"Objetivos":[
+					"Gerenciar a informação contida no catálogo de serviço",
+					"Garantir que o catálogo de serviço seja preciso e reflita os detalhes atuais, o estado, as interfaces e as dependências de todos os serviços que estão em operação ou sendo preparados para entrar em operação",
+					"Garantir que o catálogo de serviço seja disponibilizado à quem tenha direito",
+					"Garantir que o catálogo de serviço suporte as necessidades de todos os outros processos de gerenciamento de serviço no que se refere a informações do catálogo, incluindo informações de todas as interfaces e dependências"
+					
+				],
+				"Escopo":[
+					"Serviços em operação",
+					"Serviços em processo de transição para operação"
+				],
+				"Conceitos Básicos":{
+					"Catálogo de Serviço":[
+						"Banco de dados ou documento estruturado com informações sobre todos os serviços de TI de produção, incluindo aqueles disponíveis para implantação",
+						"Catálogo de Serviços - duas visões",
+						"Catálogo de Serviços - três visões"
+					],
+					"Catálogo de Serviços de Negócio":[
+						"Serviços ao cliente",
+						"Unidades de negócio",
+						"Processos de negócio"
+					],
+					"Catálogo de Serviços Técnicos":[
+						"Serviços de suporte",
+						"Serviços compartilhados",
+						"Componentes, Itens de Configuração",
+						"Suporta o Catálogo de Serviços de Negócio"
+					]
+				}
+			},
+			"Gerenciamento de Fornecedor":{
+				"propósito:/objetivos":[
+					"Obter resultados esperados dos serviços contratados com fornecedores",
+					"Garantir que os contratos e acordos com fornecedores estejam alinhados com necessidades de negócio",
+					"Garantir que os fornecedores cumpram com os seus comprometimentos contratuais.",
+					"Gerir o relacionamento e performance dos fornecedores",
+					"Negociar contratos com fornecedores",
+					"Manter uma base de dados de fornecedores e contratos"
+				],
+				"Escopo": "Todos os fornecedores e contratos necessários para suportar a entregue de serviços de TI",
+				"Conceitos Básicos":{
+					"Categorias de fornecedor":[
+						"Fornecedor de commodity",
+						"Fornecedores operacionais",
+						"Fornecedores táticos",
+						"Fornecedores estratégicos"
+					],
+					"Sistema de Informação de Gerenciamento de Fornecedor e Contrato (SIGFC)": "Conjunto de ferramentas, dados e informações usadas para dar suporte ao gerenciamento de fornecedor"
+				}
+			},
+			"Gerenciamento da Disponibilidade":{
+				"Propósito": "Assegurar que os níveis de disponibilidade entregues coincidam ou excedam as necessidades atuais e futuras acordadas com o negócio, de forma econômica",
+				"Objetivos":[
+					"Produzir e manter um plano de disponibilidade apropriado e atualizado que reflita as necessidades atuais e futuras do negócio",
+					"Prover orientações relacionadas a questões de disponibilidade para as outras áreas do negócio e da TI",
+					"Garantir que a disponibilidade do serviço atenda as metas acordadas, gerenciando a disponibilidade dos serviços e recursos associados",
+					"Apoiar o diagnóstico e resolução de incidentes e problemas relacionados a (in)disponibilidade",
+					"Avaliar o impacto de todas as mudanças no plano de disponibilidade e na disponibilidade de todos os serviços e recursos",
+					"Garantir que medições proativas para melhorar a disponibilidade sejam implementadas quando os custos forem justificáveis"
+				],
+				"Escopo":{
+					"c1":"Disponibilidade de Serviço",
+					"c2":"Disponibilidade de Componente",
+					"atividades proativas": "Planejamento, desenho e melhora da disponibilidade",
+					"atividades reativas": "Monitoração, medição, análise e gerenciamento de eventos, incidentes e problemas envolvendo disponibilidade"
+				},	
+				"Conceitos Básicos":{
+					"Disponibilidade":[
+						"Habilidade de um Item de Configuração ou Serviço de realizar sua função conforme requerido e acordado",
+						"Geralmente calculada como porcentagem de tempo de serviço e tempo parado (downtime)‏"
+					],
+					"Confiabilidade (Reliability)":[
+						"Mede por quanto tempo um serviço ou componente consegue desempenhar sua função sem interrupção",
+						"Tempo Médio Entre Incidentes de Serviço-TMEIS (Mean Time Between Service Incidents-MTBSI)",
+						"Tempo Médio entre Falhas-TMEF (Mean Time Between Failures-MTBF)"
+					],
+					"Sustentabilidade de Serviço (Maintainability)":[
+						"Mede a rapidez e a eficácia com que um serviço ou componente pode ser restaurado ao funcionamento normal após uma falha",
+						"Tempo Médio para Restaurar o Serviço-TMRS (Mean Time to Restore Service-MTRS)"
+					],
+					"Funcionalidade/Oficiosidade de serviço (Serviceability)": "Habilidade de um fornecedor de cumprir os termos de seu contrato em aspectos como disponibilidade, confiabilidade e funcionalidade de serviço",
+					"Funções de negócio vital (FNV)":[
+						"Parte de um processo de negócio que é crítico para o sucesso do negócio",
+						"É uma consideração importante no gerenciamento de continuidade de negócio, gerenciamento de continuidade de serviço de TI e gerenciamento de disponibilidade"
+					]
+				}
+			},
+			"Gerenciamento da Capacidade":{
+				"Propósito":[
+					"Garantir que a capacidade dos serviços de TI e da infraestrutura de TI atenda aos requisitos relacionados a capacidade e desempenho acordados de a custos efetivos e em tempo hábil",
+					"Balanceamento Custo X Recursos",
+					"Balanceamento Demanda X Oferta"
+				],
+				"Objetivos":[
+					"Produzir e manter um plano de capacidade apropriado e atualizado que reflita as necessidades atuais e futuras do negócio",
+					"Prover orientações relacionadas a questões de capacidade para as outras áreas do negócio e da TI",
+					"Garantir que o desempenho do serviço atenda as metas acordadas gerenciando o desempenho e a capacidade dos serviços e recursos",
+					"Apoiar o diagnóstico e resolução de incidentes e problemas relacionados a capacidade e desempenho",
+					"Avaliar o impacto de todas as mudanças no plano de capacidade e na capacidade e desempenho de todos os serviços e recursos",
+					"Garantir que medições proativas para melhorar o desempenho sejam implementadas quando os custos forem justificáveis"
+				],
+				"Escopo":[
+					"Gerenciamento de Capacidade de Componente",
+					"Gerenciamento de Capacidade de Serviço",
+					"Gerenciamento de Capacidade de Negócio"
+				],
+				"Conceitos Básicos":{
+					"Plano de Capacidade":[
+						"Plano usado para gerenciar os recursos necessários para entregar serviços de TI",
+						"Contém detalhes do uso atual e histórico dos serviços e componentes de TI e qualquer questão que precise ser tratada (incluindo atividades relacionadas de melhoria)",
+						"Contém cenários para diferentes previsões das demandas de negócio e opções de custo para entrega das metas de nível de serviços acordados",
+						"Deve ser atualizado ao menos anualmente"
+					],
+					"Sistema de Informação do Gerenciamento da Capacidade (SIGC)": "Conjunto de ferramentas, dados e informações que é usado para dar suporte ao gerenciamento de capacidade"
+				}
+			},
+			"Gerenciamento da Continuidade para Serviços de TI":{
+				"Propósito": "Suportar o processo geral de Gerenciamento da Continuidade do Negócio garantindo que os serviços e recursos de TI (incluindo sistemas, redes, aplicações, repositórios de dados, telecomunicações, ambiente, suporte técnico e a Central de Serviços) possam ser recuperados dentro dos prazos requeridos e acordados com o negócio",
+				"Objetivos":[
+					"Produzir e manter um conjunto de planos de continuidade que suportem o plano geral de continuidade do negócio da organização",
+					"Realizar exercícios frequentes de análise de impacto no negócio para garantir que todos os planos de continuidade estejam alinhados com os requisitos e a criticidade do negócio",
+					"Conduzir avaliações periódicas de riscos e gerenciar riscos de serviços de TI dentro dos níveis de risco acordados em conjunto com o negócio e com os processos de gerenciamento da disponibilidade e da segurança da informação",
+					"Prover orientações para todas as áreas do negócio e da TI sobre questões relacionadas a continuidade",
+					"Garantir que os mecanismos adequados de continuidade estejam implementados para atender ou exceder as metas de continuidades acordadas",
+					"Avaliar o impacto de todas as mudanças nos planos de continuidade e seus métodos e procedimentos associados",
+					"Garantir que medições proativas para a melhora da disponibilidade dos serviços sejam implementadas quando o custo for justificável",
+					"Negociar e acordar contratos com fornecedores para o fornecimento da habilidade de recuperação necessária para suportar os planos de continuidade em conjunto com o processo de gerenciamento de fornecedor"
+				],
+				"Escopo": "Eventos considerados significativos - DESASTRES",
+				"Conceitos Básicos":{
+					"c1":"Função de Negócio Vital (FNV)",
+					"Análise de Impacto no Negócio (AIN) / Business Impact Analysis (BIA)":{
+						"c1":"Atividade que identifica as Funções Vitais do Negócio e suas dependências (pessoas, fornecedores, processos de negócio)",
+						"Define os requisitos de recuperação para os Serviços de TI":[
+							"objetivos: de Tempo de Recuperação",
+							"objetivos: de Ponto de Recuperação",
+							"Níveis de Serviço mínimos"
+						]
+					},
+					"Risco":{
+						"Incerteza do resultado, seja oportunidade ou ameaça":{
+							"riscos de disponibilidade": "Ex: ponto único de falha",
+							"riscos de continuidade de serviços": "Ex: rota de avião",
+							"riscos de segurança": "Ex: comunicação não-criptografada",
+							"riscos de projetos": "Ex: recursos indisponíveis"
+						}
+					},
+					"Gerenciamento de Riscos":[
+						"Depende da identificação e controle da exposição ao risco e seu impacto",
+						"Análise de Risco: identificação e avaliação do nível (ameaças X vulnerabilidades)‏",
+						"Gerenciamento de Risco: monitoração e controle"
+					]
+				}
+			},
+			"Gerenciamento da Segurança da Informação":{
+				"Propósito":" Alinhar a segurança de TI com a segurança do Negócio e assegurar que a segurança da informação seja gerenciada de forma eficaz para todos os serviços e atividades de gerenciamento dos serviços",
+				"Objetivos":[
+					"Proteger os interesses daqueles que confiam na informação, e os sistemas e comunicações que entregam a informação, de danos resultantes de falhas na confidencialidade, integridade e disponibilidade",
+					"Fornecer uma direção estratégica para as atividades de segurança",
+					"Gerenciar os riscos de segurança da informação"
+				],
+				"Escopo":[
+					"Planos e políticas de segurança do negócio",
+					"Operação atual do negócio e requisitos de segurança associados",
+					"Planos e requisitos futuro de negócio",
+					"Requisitos regulatórios",
+					"Obrigações e responsabilidades relacionadas a segurança acordadas em SLAs",
+					"Riscos do negócio e da TI e seu gerenciamento"
+				],
+				"Conceitos Básicos":{
+					"Política de Segurança da Informação": "Política que governa a abordagem da organização quanto ao gerenciamento de segurança da informação",
+					"Confidencialidade": "Informação vista somente por quem tem direito",
+					"Integridade": "Informação completa, precisa e protegida contra alterações não autorizadas",
+					"Disponibilidade": "Informação disponível e utilizável quando solicitada"
+				}
+			},
+			"Coordenação de Desenho":{
+				"Propósito": "Garantir que as metas e objetivos do estágio de desenho de serviço sejam cumpridos, fornecendo e mantendo um ponto único de coordenação e controle para todas as atividades e processo do estágio de desenho de serviço.",
+				"Objetivos":[
+					"Garantir um desenho consistente de serviços, sistemas de gerenciamento, arquiteturas, tecnologias, processos, informação e métricas para atender os resultados e requisitos atuais e futuros do negócio",
+					"Coordenar todas as atividades de desenho através dos projetos, mudanças, fornecedores e equipes de suporte, e gerenciar agendas, recursos e conflitos quando necessário",
+					"Planejar e coordenar os recursos e habilidades necessárias para desenhas serviços novos ou modificados",
+					"Garantir que o desenho apropriado de serviço e/ou pacotes de desenho de serviço (PDS) sejam produzidos e conduzidos durante a transição do serviço conforme acordado",
+					"Gerenciar os critérios de qualidade, requisitos e pontos de passagem de bastão (handover) entre os estágios de desenho e transição de serviço",
+					"Garantir que todos os modelos de serviço e soluções de serviço sejam desenhados conforme requisitos estratégicos, corporativos, de arquitetura e governança",
+					"Melhorar a eficiência e eficácia das atividades e processos de desenho de serviço",
+					"Garantir que todas as partes adotem um framework padrão, reutilizável, de práticas de desenho na forma de atividades, processos e sistemas de suporte, quando apropriado",
+					"Monitorar e melhorar o desempenho do ciclo do estágio de desenho de serviço"
+				],
+				"Escopo": "Toda a atividade de desenho, particularmente todos as soluções de serviço novas ou modificadas que são desenhadas para transição no ambiente de produção (ou fora isso, no caso de descontinuação do serviço)"
+			}
+		},
+		"Processos de Transição de Serviço":{
+			"Gerenciamento da Configuração e Ativos de Serviços (GCAS)":{
+				"Propósito": "Garantir que os ativos necessários pra entrega de serviços sejam controlados de forma apropriada, e que informações confiáveis e precisas sobre esses ativos sejam disponibilizadas quando necessário",
+				"Objetivos":[
+					"Garantir que ativos sobre o controle da organização de TI sejam identificados, controlados e acompanhados por todo o seu ciclo de vida",
+					"Identificar, controlar, registrar, reportar, auditar e verificar serviços e itens de configuração (IC), incluindo versões, linhas de base (baselines), componentes associados, seus atributos e relacionamentos",
+					"Prestar contas, gerenciar e proteger a integridade dos ICs por todo seu ciclo de vida trabalhando com o gerenciamento de mudança para garantir que somente componentes autorizados sejam usados e somente mudanças autorizadas sejam realizadas",
+					"Garantir a integridade de ICs e configurações necessárias para controlar os serviços, estabelecendo e mantendo um sistema de gerenciamento da configuração (SGC) preciso e completo"
+				],
+				"Escopo":{
+					"Gerenciamento de Ativos":"Provê um inventário completo dos ativos de serviço desde a aquisição até o descarte",
+					"Gerenciamento da Configuração":[
+						"Provê um modelo de configuração dos serviços, ativos e infraestrutura, registrando os relacionamentos entre os ativos de serviço e os itens de configuração",
+						"Só permite o uso de componentes autorizados e a execução de mudanças autorizadas",
+						"Acompanha os serviços e seus componentes ao longo de todo seu ciclo de vida"
+					]
+				},
+				"Conceitos Básicos":{
+					"Item de Configuração (IC)":[
+						"Qualquer componente que precise ser gerenciado para que se entregue um serviço de TI",
+						"As informações sobre cada IC são registradas em um registro de configuração no sistema de gerenciamento de configuração (SGC)",
+						"É mantido por todo o seu ciclo de vida pelo gerenciamento de configuração e ativo de serviço.",
+						"Estão sob o controle do gerenciamento de mudança",
+						"Incluem tipicamente hardware, software, prédios, pessoas e documentos formais tais como documentação de processos e acordos de nível de serviço"
+					],
+					"Banco de Dados de gerenciamento da configuração (BDGC)":[
+						"Popularmente conhecido como Configuration Management Database (CMDB)",
+						"Banco de dados usado para armazenar os registros da configuração durante todo o seu ciclo de vida",
+						"O sistema de gerenciamento de configuração (SGC) mantém um ou mais bancos de dados de gerenciamento de configuração, e cada banco de dados armazena atributos de itens de configuração e relacionamentos com outros itens de configuração"
+					],
+					"Sistema de gerenciamento da configuração (SGC)":[
+						"Detém todas as informações dos ICs que estão no escopo de gerenciamento da configuração e ativos de serviço (GCAS)",
+						"Inclui relacionamentos, incidentes, problemas, erros conhecidos, mudanças, etc.",
+						"Pode receber dados de vários BDGCs"
+					],
+					"Modelo de Configuração":[
+						"Modelo que identifica os relacionamentos entre os itens de configuração",
+						"Deve ser único na organização, e usado por todas as equipes e partes interessadas"
+					],
+					"Biblioteca de Mídia Definitiva (BMD)":{
+						"Área segura e controlada que armazena versões definitivas e autorizadas dos ICs em formato digital":[
+							"Cópias master de softwares adquiridos ou desenvolvidos",
+							"Documentação ou informações sobre licenças",
+							"Cópias master de documentação controlada"
+						],
+						"c1":"Inclui área de armazenamento físico (sala cofre)",
+						"c2": "É a base para o Gerenciamento de Liberação e Implantação"
+					},
+					"Configuração de Referência (Configuration Baseline)":[
+						"configuração de um serviço, produto ou infraestrutura que foi formalmente revisada e acordada",
+						"Deve ser modificada por meio dos procedimentos formais de gerenciamento de mudança",
+						"Captura estrutura, conteúdo e detalhes de uma configuração e representa um conjunto de ICs relacionados entre si"
+					]
+				},
+				"interfaces":{
+					"Gerenciamento de Incidente": "Ger. da Configuração provê informações dos ICs e seus relacionamentos para diagnosticar e resolver os incidentes mais rapidamente.",
+					"Gerenciamento de Problema": "Ger. da Configuração provê informações dos ICs para facilitar a investigação da causa raiz e implementação da solução definitiva",
+					"Gerenciamento de Mudança":[
+						"Ger. da Configuração provê informações dos ICs para facilitar a autorização das mudanças",
+						"Ger. de Mudança garante a atualização dos ICs no SGC após a execução das mudanças"
+					],
+					"Gerenciamento de Disponibilidade, Capacidade e Continuidade": "Ger. da Configuração prove informações sobre os ICs e seus relacionamentos que podem auxiliar no plano de capacidade (como usar e alocar os ICs da melhor forma), plano de disponibilidade (ICs críticos/ serviços críticos e pontos de falha) e plano de continuidade (requisitos de recuperação em caso de desastre)",
+					"Gerenciamento Financeiro para Serviços de TI": "Ger. da Configuração envia informações dos ICs para que o Ger. Financeiro monitore os investimentos e custos. O Ger. Financeiro pode combinar estas informações com os SLAs para facilitar a cobrança dos clientes"
+				}
+			},
+			"Gerenciamento de Mudança":{
+				"Propósito":"Adição, modificação ou remoção de um serviço ou um componente de serviço - seja ele autorizado, planejado ou suportado - e toda sua documentação associada",
+				"Objetivos":[
+					"Responder as alterações de requisitos do negócio enquanto maximiza o valor e reduz incidentes, interrupções e retrabalho",
+					"Responder as requisições de mudança (RDM) do negócio e da TI que alinharão os serviços com as necessidades do negócio",
+					"Garantir que as mudanças sejam registradas e avaliadas, e que mudanças autorizadas sejam priorizadas, planejadas, testadas, implementadas, documentadas e revisadas de uma forma controlada",
+					"Garantir que todas as mudanças nos itens de configuração sejam registradas no sistema de gerenciamento da configuração (SGC)",
+					"Otimizar o risco geral do negócio"
+				],
+				"Escopo": "Mudanças em ativos de serviço e itens de configuração controlados (baseline), por todo o ciclo de vida do serviço",
+				"Conceitos Básicos":{
+					"Mudança": "Adição, modificação ou remoção de um serviço ou um componente de serviço - autorizado, planejado ou suportado - e sua documentação associada",
+					"Requisição de Mudança (RDM)": "Uma proposta formal de mudança, incluindo os detalhes da mudança proposta",
+					"Proposta de Mudança": "Documento que inclui uma descrição de alto nível de uma potencial introdução de serviço ou mudança significativa, junto com um caso de negócio correspondente e um cronograma da implementação esperada"
+				},
+				"Tipos de Mudança":{
+					"Normal": [
+						"Precisa ser avaliada e autorizada",
+						"Documentada antes de ser executada"
+					],
+					"Padrão (Standard)":[
+						"Pré-autorizada",
+						"Segue passos e prazos bem conhecidos",
+						"Rotineira, de baixo impacto"
+					],
+					"Emergencial":[
+						"Relacionada a falha não prevista e de alto impacto",
+						"Precisa ser avaliada e autorizada (CCME)",
+						"Documentada depois de executada"
+					]
+				},
+				"Modelos de Mudança": "Passos pré-definidos que devem ser seguidos para lidar com um tipo particular de mudança",
+				"Autoridade de Mudança": [
+					"Responsável por avaliar e autorizar formalmente cada mudança",
+					"Pode ser um papel, uma pessoa ou um grupo de pessoas",
+					"Os níveis de autorização dependem do tipo, tamanho e risco de uma mudança"
+				],
+				"Comitê Consultivo de Mudança-CCM‏ (Change Advisory Board-CAB)":[
+					"Corpo consultivo que suporta a autorização de mudanças e apoia a avaliação e priorização das mudanças",
+					"Membros devem ser escolhidos de modo a garantir que as mudanças sejam avaliadas do ponto de vista técnico, financeiro e de negócio",
+					"Composição varia de acordo com as mudanças a serem avaliadas"
+				],
+				"Comitê Consultivo de Mudança Emergencial-CCME":[
+					"Subgrupo do Comitê Consultivo de Mudança (CCM/CAB)",
+					"Avalia e autoriza mudanças emergenciais"
+				]
+			},
+			"atividades":[
+				"Criar e registrar a RDM (Requisição de Mudança)",
+				"Revisar a RDM",
+				"Analisar e avaliar a mudança",
+				"Autorizar a construção e teste da mudança",
+				"Coordenar a construção e teste da mudança",
+				"Autorizar e coordenar a implementação da mudança",
+				"Revisar e encerrar da mudança"
+			],
+			"interfaces":{
+				"Gerenciamento da Configuração e Ativos de Serviço (GCAS)": [
+					"Ger. da Configuração provê informações sobre os ICs na BDGCB e seus relacionamentos.",
+					"Ger. de Mudanças garante a atualização dos CIs alterados ou adicionados na BDGC."
+				],
+				"Gerenciamento de Incidente":[
+					"Ger. de Incidentes cria RDMs para solucionar incidentes e executa mudanças padrão.",
+					"Ger. de Mudanças informa RDMs para o Ger. de Incidentes para que eles identifiquem se um impacto trata-se de incidente, erros conhecidos ou mudanças implementadas no ambiente."
+				],
+				"Gerenciamento de Problema":[
+					"Ger. de problemas gera RDMs para implementar soluções permanentes",
+					"Ger. de Mudanças informa as RDMs implementadas e acessa a base de dados do gerenciamento de problemas para verificar qualquer erro relacionado a mudanças"
+				],
+				"Gerenciamento de Liberação e Implantação":[
+					"Ger. de Liberação e Implantação cria , testa e implementa as mudanças e informa o status das mudanças",
+					"Ger. de Mudança provê os planos de mudança e coordena as atividades"
+				],
+				"Gerenciamento do Nível de Serviço": "Ger. do Nível de Serviço avalia as mudanças e os impactos nos SLAs"
+			}
+		},
+		"Gerenciamento de Liberação e Implantação":{
+			"Propósito": "Planejar, agendar e controlar a construção, teste e implantação de liberações, e entregar novas funcionalidades requeridas pelo negócio ao mesmo tempo protegendo a integridade de serviços existentes",
+			"Objetivos":[
+				"Definir e acordar os planos de liberação e implantação com os clientes e interessados (stakeholders)‏",
+				"Garantir que cada pacote de liberação seja composto de um conjunto de ativos relacionados e componentes de serviço compatíveis entre si",
+				"Garantir a integridade do pacote de liberação durante todas as atividades e seu registro no SGC (Sistema de Gerenciamento da Configuração)‏",
+				"Garantir que todos os pacotes de liberação e implantação possam ser rastreados, instalados, testados, verificados e/ou desinstalados e removidos caso necessário",
+				"Garantir que haja transferência de conhecimento para que usuários e clientes possam otimizar o uso do serviço e tirar o máximo resultado dos serviços",
+				"Garantir que habilidades e conhecimentos sejam transferidos para as equipes de operações e suporte para que possam entregar, suportar e manter o serviço de acordo com as Garantias e Nível de Serviço exigidos"
+			],
+			"Escopo": {
+				"c1": "Processos, sistemas e funções para empacotar, construir, testar e implementar uma liberação no ambiente produtivo",
+				"Todos os itens de configuração necessários para implementar uma liberação":[
+					"Ativos físicos (servidor, rede)",
+					"Ativos virtuais (servidor virtual, storage virtual)",
+					"Aplicativos e software",
+					"Treinamento para usuários e equipe de TI",
+					"Serviços, incluindo todos os contratos e acordos relacionados"
+				]
+			},
+			"Conceitos Básicos":{
+				"Liberação (Release)": "Uma ou mais mudanças em um serviço de TI que são construídas, testadas e implementadas ao mesmo tempo",
+				"Unidade de Liberação (Release Unit)": "Componentes de um serviço de TI que são normalmente liberados juntos",
+				"Pacote de Liberação (Release Package)": "Um conjunto de itens de configuração que será construído, testado e implantado ao mesmo tempo, como uma única liberação",
+				"Implantação (Deploy)": "Atividade responsável pela movimentação das mudanças de novos hardwares, softwares, documentação, processo, etc. no ambiente de produção",
+				"Política de Liberação (Release Policy)": "Conjunto de decisões que direcionam a forma como o processo de gerenciamento de liberação e implantação deve ser seguido",
+				"Opções de Implantação":{
+					"Big Bang X Abordagem Faseada":{
+						"Big Bang": "Implantação da liberação para todas as áreas de destino ao mesmo tempo",
+						"Abordagem Faseada": "A liberação é implantada em diferentes destinos em diferentes momentos"
+					},
+					"Empurrar X Puxar (ou Push X Pull)":{
+						"Empurrar (Push)":[
+							"A liberação é implantada a partir de um ponto central",
+							"Usuários normalmente não tem escolha sobre quando vão receber a atualização"
+						],
+						"Puxar (Pull)": "Usuário tem a possibilidade de ter uma nova liberação clicando em um link e instalando o software quando achar conveniente"
+					},
+					"c1": "Automático X Manual"
+				}
+			},
+			"atividades":[
+				"Planejamento da liberação e implantação",
+				"Construção e teste da liberação",
+				"Implantação",
+				"Revisão e encerramento"
+			]
+		},
+		"Gerenciamento do Conhecimento":{
+			"Propósito": "Garantir que informações corretas sejam disponibilizadas ao longo de todo o ciclo de vida do serviço, permitindo que pessoas competentes possam tomar decisões informadas",
+			"Objetivos":[
+				"Melhorar a qualidade da tomada de decisão garantindo que conhecimento, informação e dados confiáveis e seguros estejam disponíveis por todo o ciclo de vida de serviço",
+				"Habilitar o provedor de serviço ser mais eficiente e melhorar a qualidade do serviço, aumentando a satisfação e reduzindo o custo do serviço, por meio da redução da necessidade de redescobrir conhecimento",
+				"Garantir que as equipes tenham uma compreensão clara e comum do valor dos serviços e a forma que os benefícios são realizados a partir do uso dos serviços",
+				"Manter um Sistema de Gerenciamento de Conhecimento de Serviço (SGCS) que forneça acesso controlado ao conhecimento, informação e dados apropriados para cada audiência",
+				"Obter, analisar, armazenar, compartilhar, usar e manter conhecimento, informação e dados por toda a organização de TI"
+			],
+			"Escopo":[
+				"Conhecimento, informação e dados",
+				"Envolve todos os estágios do ciclo de vida de serviço"
+			],
+			"Conceitos Básicos":{
+				"DICS":{
+					"Dado": "Conjunto discreto de fatos",
+					"Informação":[
+						"Surge ao se contextualizar o dado",
+						"Tem um significado",
+						"Permite tirar conclusões"
+					],
+					"Conhecimento":[
+						"Composto de experiências tácitas, ideias, valores e julgamentos de indivíduos",
+						"Transforma a informação em algo que pode ser usado"
+					],
+					"Sabedoria": "A partir do uso do conhecimento, cria a habilidade de julgar e tomar decisões corretamente"
+				},
+				"Sistema de gerenciamento do conhecimento de serviço (SGCS)":[
+					"Conjunto de ferramentas e bases de dados para armazenar, gerenciar e disponibilizar todo conhecimento e informação necessários para gerenciar o ciclo de vida dos serviços e tomar decisões informadas",
+					"Inclui o SGC (Sistema de Gerenciamento da Configuração) assim como outras bases de dados e sistemas de informação"
+				]
+			}
+		},
+		"Planejamento e Suporte da Transição":{
+			"Propósito": "Planejar todos os processos de transição de serviços e coordenar recursos requeridos",
+			"Objetivos":[
+				"Garantir a transição eficaz para a operação do serviço",
+				"Coordenar atividades de transição",
+				"Estabelecer sistemas e ferramentas de gerenciamento de informações, processos de, métodos de medição e métricas para cumprir requerimentos estabelecidos durante o estágio de desenho do serviço",
+				"Fornecer planos de transição claros e compreensíveis",
+				"Identificar, gerenciar e controlar riscos da transição de serviço",
+				"Monitorar e melhorar a performance do ciclo de vida do estágio de transição de serviço"
+			],
+			"Escopo":[
+				"Politicas, padrões e modelos para atividades de transição",
+				"Mudanças importantes",
+				"Múltiplas transições ao mesmo tempo",
+				"Priorização de requerimentos conflitantes por recursos de transição",
+				"Orçamento e recursos necessários para cumprir requerimentos futuros para transição de serviço"
+			]
+		},
+		
+		"Processos de Operação de Serviço":{
+			"Gerenciamento de Incidente":{
+				"Propósito": "Restaurar a operação normal do serviço o mais rápido possível, e minimizar o impacto adverso nas operações do negócio, garantindo que os níveis de serviço acordados sejam mantidos",
+				"Objetivos":[
+					"Garantir que métodos e procedimentos padronizados sejam usados para uma pronta e eficiente resposta, análise, documentação, acompanhamento e reporte de incidentes",
+					"Aumentar a visibilidade e comunicação de incidentes para o negócio e equipe de TI",
+					"Intensificar a percepção do negócio sobre o uso da TI",
+					"Manter a satisfação do usuário com relação a qualidade dos serviços de TI"
+				],
+				"Escopo":[
+					"Tratamento de qualquer questão que interrompa ou possa interromper um serviço ou provoque queda de qualidade do mesmo",
+					"Considera incidentes comunicados pelos usuários seja pela central de serviços ou por interface com gerenciamento de eventos",
+					"Considera incidentes registrados por pessoal técnico"
+				],
+				"Conceitos Básicos":{
+					"Incidente":[
+						"Interrupção não planejada em um serviço de TI",
+						"Redução na qualidade de um serviço de TI",
+						"Falha em um componente que ainda não tenha gerado impacto no serviço"
+					],
+					"Incidente Grave":[
+						"A mais alta categoria de impacto de um incidente",
+						"Causa um impacto significativo no negócio"
+					],
+					"Impacto, Urgência e Prioridade":{
+						"Prioridade":[
+							"Associada à ordem e algumas orientações no tratamento de incidentes e problemas",
+							"É baseada na relação do Impacto e da Urgência"
+						],
+						"Impacto":[
+							"Uma medida do efeito de um incidente, problema ou mudança em processos do negócio",
+							"Normalmente é baseado em como os níveis de serviço serão afetados"
+						],
+						"Urgência": "Uma medida de quanto tempo um incidente, problema ou mudança levará até que tenha um impacto significativo no negócio"
+					},
+					"Modelo de Incidente": "Procedimento pré-acordado para lidar com um tipo particular de incidente",
+					"Escalada":{
+						"c1":"Atividade que obtém recursos adicionais quando necessário para atingir as metas de nível de serviço ou expectativa dos clientes",
+						"c2": "Pode ser necessária em qualquer processo do gerenciamento de serviço de TI, mas é mais comumente associada ao gerenciamento de incidente, gerenciamento de problema e o gerenciamento de reclamações de cliente",
+						"Escalada funcional": "Transferência de um incidente, problema ou mudança para uma equipe técnica que tenha maior nível de especialização e conhecimento técnico que possa auxiliar na escalada",
+						"Escalada hierárquica": "Informar ou envolver níveis gerenciais mais seniores para ajudar em uma escalada"
+					}
+				},
+				"atividades":[
+					"Identificação",
+					"Registro",
+					"Categorização",
+					"Diagnóstico inicial",
+					"Escalação (funcional e hierárquica)",
+					"Investigação e Diagnóstico",
+					"Resolução e Recuperação",
+					"Encerramento"
+				],
+				"interfaces":{
+					"Central de Serviços (função)": "Normalmente a Central de Serviço faz o registro, suporte inicial e o acompanhamento dos incidentes por todo o seu ciclo de vida",
+					"Gerenciamento de Problema":[
+						"Ger. de Problema informa erros conhecidos, soluções de contorno e correções definitivas para o Ger. de Incidente",
+						"Ger. de Incidente oferece insumos para novos registros de problemas"
+					],
+					"Gerenciamento da Configuração e Ativo de Serviço":[
+						"Ger. da Configuração provê informações dos ICs e seus relacionamentos para diagnosticar e resolver o incidente mais rapidamente",
+						"Ger. de Incidente informa erros e inconsistências identificadas no SGC para o Ger. da Configuração durante o registro do incidente (auditoria)"
+					],
+					"Gerenciamento de Mudança": "Ger. de Mudança disponibiliza para o Ger. de Incidentes informações sobre o andamento e resultados das RDMs e programação de mudanças autorizadas",
+					"Gerenciamento de Nível de Serviço":[
+						"Ger. de Nível de Serviço informa para o Ger. de Incidente os SLAs para solução de incidentes",
+						"Ger. de Incidente gera relatórios dos níveis de serviços relacionados ao processo de Ger. de Incidente (ex: prazo de atendimento de incidentes)"
+					]
+				}
+			},
+			"Gerenciamento de Problema":{
+				"Propósito": "Gerenciar o ciclo de vida de todos os problemas, desde sua identificação inicial até sua eventual remoção, passando pela sua investigação e documentação",
+				"Objetivos":[
+					"Evitar problemas e seus incidentes resultantes",
+					"Eliminar ou reduzir a recorrência de incidentes",
+					"Minimizar o impacto dos incidentes que não podem ser evitados"
+				],
+				"Escopo":[
+					"Problemas que estão causando ou já causaram incidentes (reativo)",
+					"Problemas potenciais que poderão causar impactos no, se não forem diagnosticados e tratados a tempo (proativo)"
+				],
+				"Conceitos Básicos":{
+					"Problema": "Causa desconhecida de um ou mais Incidentes",
+					"Problema Grave": "Mesmas características de Incidente Grave",
+					"Solução de contorno (workaround)":[
+						"Ação visando recuperar o serviço que apresenta falhas independentemente se isso vai resolver a causa",
+						"Solução provisória"
+					],
+					"Erro Conhecido": "Problema cuja Causa foi diagnosticada e para o qual existe uma Solução de Contorno, ambas documentadas",
+					"Banco de dados de erro conhecido (BDEC)":[
+						"Base de dados de todos os erros conhecidos registrados",
+						"Usada pela central de serviços ou os grupos de suporte pra identificar soluções de contorno durante as atividades de gerenciamento de serviços"
+					]
+				},
+				"atividades":[
+					"Detecção",
+					"Registro",
+					"Categorização",
+					"Priorização",
+					"Investigação e Diagnóstico",
+					"Registro de Erro Conhecido",
+					"Resolução",
+					"Encerramento",
+					"Revisão de Problema Grave"
+				],
+				"interfaces":{
+					"Gerenciamento de Incidente":[
+						"Ger. de Incidente provê informações de incidentes",
+						"Ger. de Problema provê informações de soluções de contorno e soluções de problemas"
+					],
+					"Gerenciamento de Mudança":[
+						"Ger. de Problema gera RDMs para solução de erros conhecidos/problemas",
+						"Ger. de Mudança provê informações sobre o andamento e resultado das mudanças"
+					],
+					"Gerenciamento da Configuração e Ativos de Serviço": "Ger. da Configuração provê informações sobre os CIs e seus relacionamentos para facilitar a investigação de problemas",
+					"Gerenciamento da Capacidade":[
+						"Ger. da Capacidade provê ferramentas, modelos de simulação e scripts de resolução para o Ger. de Problema",
+						"Ger. de Problema provê informações de problemas relacionados a capacidade para Ger. da Capacidade"
+					],
+					"Gerenciamento da Disponibilidade":[
+						"Ger. de Disponibilidade informa os níveis de disponibilidade necessários",
+						"Ger. de Problema identifica e corrige problemas que afetam a disponibilidade do serviço"
+					]
+				}
+			},
+			"Gerenciamento de Evento":{
+				"Propósito": "Gerenciar os eventos através de todo o seu ciclo de vida. Este ciclo de vida inclui as atividades de identificação, interpretação e determinação da resposta apropriada para um evento",
+				"Objetivos":[
+					"Detectar todas as alterações de estado que tenham significância para o gerenciamento de um IC ou Serviço de TI",
+					"Determinar a ação de controle apropriada para eventos e garantir que estes sejam comunicados para as funções apropriadas",
+					"Prover o gatilho (trigger), ou ponto de entrada, para a execução de processos de operação de serviço e atividades de gerenciamento de operações",
+					"Prover maneiras de comparar o desempenho e o comportamento atual da operação com os padrões de desenho e SLAs",
+					"Fornecer uma base para a melhoria contínua de serviço"
+				],
+				"Escopo":{
+					"Qualquer aspecto do gerenciamento de serviço que exija ser controlado e que possa ser automatizado":[
+						"Itens de Configuração",
+						"Ambiente (ex: detecção de fumaça, fogo)",
+						"Segurança",
+						"atividades: normais"
+					]
+				},
+				"Conceitos Básicos":{
+					"Evento": "Qualquer ocorrência detectável ou discernível que tenha significância para o gerenciamento da infraestrutura de TI ou entrega dos serviços de TI quanto ao impacto que um desvio possa causar no serviço",
+					"Tipos de Eventos":[
+						"Operação Normal (Informational)",
+						"Operação não usual, mas não exceção (Warning)",
+						"Exceção (Exception)"
+					],
+					"Alerta": "Aviso de que algum limite foi atingido, ou houve mudança no ambiente, ou ocorreu uma falha em um serviço ou componente gerenciado"
+				}
+			},
+			"Cumprimento de Requisição":{
+				"Propósito": "Gerenciar o ciclo de vida de todas as requisições de serviços",
+				"Objetivos":[
+					"Manter a satisfação de usuários e clientes através do tratamento profissional de todas as requisições de serviço",
+					"Fornecer um canal para os usuários solicitar e receber serviços padronizados dos quais exista um processo pré-definido de qualificação e aprovação",
+					"Prover informação para os usuários e clientes informações sobre a disponibilidade de serviços e os procedimentos de como obtê-los",
+					"Definir o fornecedor e entregar os componentes do serviço solicitado",
+					"Auxiliar no fornecimento de informações gerais e no tratamento de reclamações e sugestões"
+				],
+				"Conceitos Básicos":{
+					"Requisição de Serviço": "Termo genérico para definir as demandas que os usuários solicitam para a área de TI",
+					"Modelos de Requisição": "Definem o fluxo padrão, com os estágios necessários para atender a requisição"
+				}
+			},
+			"Gerenciamento de Acesso":{
+				"Propósito": "Garantir aos usuários autorizados o direito de usar um serviço, ao mesmo tempo prevenindo o acesso a usuários não autorizados. Executar as políticas e ações definidas no Gerenciamento de Segurança e no Gerenciamento de Disponibilidade",
+				"Objetivos":[
+					"Gerenciar acesso aos serviços baseados em politicas e ações definidas pelo Gerenciamento da Segurança da Informação",
+					"Responder a requisições de acesso a serviços, alterando direitos de acesso ou restringindo acessos",
+					"Supervisionar os acessos a serviços e garantir que os direitos fornecidos não estejam sendo usados de forma inapropriada"
+				],
+				"Escopo":[
+					"Gerenciar a confidencialidade, disponibilidade e integridade dos dados e da propriedade intelectual da organização",
+					"Execução das políticas definidas pelo Gerenciamento da Segurança da Informação"
+				],
+				"Conceitos Básicos":{
+					"Acesso": "Nível e extensão dos dados ou funcionalidades de um serviço que um usuário está autorizado a usar",
+					"Identidade": "Informação que permite distinguir um usuário e seu status dentro da organização",
+					"Direitos / Privilégios": "Configurações que controlam o tipo de acesso do usuário. Exemplo: leitura, escrita, execução, modificação, exclusão, etc."
+				}
+			}
+		},
+		"Processo de Melhoria de Serviço continuada":{
+			"Melhoria de Sete Etapas":[
+				"Definir o que deveria ser medido",
+				"Definir o que vai ser medido",
+				"Coletar dados",
+				"Processar dados",
+				"Analisar a informação e os dados",
+				"Apresentar e usar a informação",
+				"Implementar a melhoria"
+			]
+		}
+	},
+	"Funções":{
+		"Central de Serviço (Service Desk)":{
+			"Papel": "Fornecer um ponto único de contato para os Usuários dos Serviços (SPOC)",
+			"Objetivos":[
+				"Restaurar a operação normal de um Serviço de TI com o mínimo de impacto nos Negócios do Cliente",
+				"Ampliar seu conhecimento"
+			],
+			"Estruturas Organizacionais":[
+				"Local",
+				"Centralizada",
+				"Virtual",
+				"Follow-the-sun"
+			]
+		},
+		"Gerenciamento de Operações de TI":{
+			"Papel":{
+				"Cuidar da Operação":[
+					"Executar as atividades padrão definidas nas fases de desenho e transição",
+					"Manter o “status quo” da Operação, buscar estabilidade"
+				],
+				"Adaptação às Mudanças":[
+					"Garantir adaptação da operação mesmo diante dos novos requerimentos e demandas do negócio",
+					"Realizar mudanças com mínimo risco à operação"
+				]
+			},
+			"Objetivos":[
+				"Manter o “status quo” (situação atual) da operação, visando estabilidade",
+				"Avaliar constantemente oportunidades de melhoria para ganhar em performance e reduzir custos, mantendo estabilidade",
+				"Utilizar capacidade técnica adequada para diagnóstico e resolução de falhas na operação de TI"
+			],
+			"Organização":{
+				"Controle de Operações de TI":{
+					"Executam as atividades operacionais rotineiras":[
+						"Console Management",
+						"Job Scheduling",
+						"Backup and Restore",
+						"Print and Output"
+					],
+					"c1": "Provê monitoramento centralizado e controle de atividades"
+				},
+				"Gerenciamento das Instalações":{
+					"Gerencia o ambiente físico de TI":[
+						"Data Center",
+						"Recovery Site"
+					]
+				}
+			}
+		},
+		"Gerenciamento Técnico":{
+			"c1": "Grupos, departamentos ou times com expertise técnico sobre infraestrutura de TI",
+			"Papel":{
+				"Identificação, desenvolvimento e refinamento do Conhecimento":[
+					"Exercer a custódia do conhecimento técnico e expertise relacionado com o gerenciamento da infraestrutura de TI",
+					"Garantir identificação e desenvolvimento do conhecimento para desenho, teste e gerenciamento de serviços de TI",
+					"Atuar em parceria com Gerenciamento de Aplicativo"
+				],
+				"Prover Recursos":[
+					"Prover os recursos para o ciclo de vida do Gerenciamento de Serviços de TI",
+					"Garantir que haja recursos capacitados para desenho, construção, operação e melhoria da entrega e suporte dos serviços de TI"
+				]
+			},
+			"Objetivos": {
+				"Fornecer apoio para planejar, implementar e manter uma infraestrutura estável capaz de sustentar o negócio":[
+					"Através de uma Topologia resiliente, bem arquitetada e com custo adequado",
+					"Através da utilização de habilidades técnicas eficazes para diagnóstico de resolução de falhas"
+				]
+			}
+		},
+		"Gerenciamento de Aplicativo":{
+			"Papel":{
+				"Identificação, desenvolvimento e refinamento do Conhecimento":[
+					"Exercer a custódia do conhecimento técnico e expertise relacionado com o gerenciamento das aplicações",
+					"Garantir identificação e desenvolvimento do conhecimento para desenho, teste e gerenciamento de serviços de TI",
+					"Atuar em parceria com Gerenciamento Técnico"
+				],
+				"Prover Recursos":[
+					"Prover os recursos para o ciclo de vida do Gerenciamento de Serviços de TI",
+					"Garantir que haja recursos capacitados para desenho, construção, operação e melhoria da entrega e suporte dos serviços de TI",
+					"Apoiar a Operação de TI sobre Aplicações e integração do gerenciamento do ciclo de vida das aplicações com o de serviços"
+				]
+			},
+			"Objetivos":[
+				"Ajudar na identificação de requisitos funcionais e de gerenciamento para softwares aplicativos",
+				"Auxiliar o desenho, produção, manutenção e suporte de aplicativos",
+				"Garantir soluções resilientes e financeiramente adequadas",
+				"Garantir assim como recursos tecnicamente habilitados"
+			]
+		}
+	}
+}

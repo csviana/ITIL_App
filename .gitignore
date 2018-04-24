@@ -5,6 +5,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+encryption/
+data/
+encryption/*
+data/*
+
+*.jpg
+*.png
+*.gif
+*.ico
+*lock.json
+
 # Runtime data
 pids
 *.pid

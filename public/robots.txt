@@ -1,0 +1,6 @@
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://csviana.ddns.net/sitemap.xml
