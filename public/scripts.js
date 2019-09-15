@@ -95,6 +95,7 @@ $(document).ready(function(){
 
 (function (window) {
 	'use strict';
+	/*
 	var fabPushElement = document.querySelector('.fab__push');
 	var fabPushImgElement = document.querySelector('.fab__image');
 	
@@ -211,6 +212,7 @@ $(document).ready(function(){
 	
 	
 	isPushSupported();
+	*/
 	
 	$.getJSON( "mapa.json", function( data ) {
 		
